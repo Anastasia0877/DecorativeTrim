@@ -1,3 +1,21 @@
+function backToTop() {
+  var button = $('.back-to-top');
+  $(window).on('scroll', () => {
+      if ($(this).scrollTop() >= 200) {
+          button.fadeIn();
+      } else {
+          button.fadeOut();
+      }
+  });
+  button.on('click', (e) => {
+      e.preventDefault();
+      $('html').animate({
+          scrollTop: 0
+      }, '100');
+  })
+}
+backToTop();
+
 $(document).ready(function(){
     $('.technology__slider').slick({
         fade: true,
@@ -23,3 +41,18 @@ $(document).ready(function(){
     focusOnSelect: true
     
   });
+
+  $(document).ready(function () {
+    $('#phone').mask('+38(000)000-00-00');
+
+});
+var button = document.querySelector("#btn");
+var input = document.querySelector('input[type=text]');
+var input2 = document.querySelector('input[type=tel]');
+button.addEventListener("click", function () {
+    input.value = "";
+    input2.value = "";
+    alert('Данні успішно відправлені');
+});
+
+
