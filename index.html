@@ -23,31 +23,30 @@
         <link rel="stylesheet" href="./assets/css/slick.css">
         <title>Decorative trim</title>
     </head>
-    <body>
+    <body >
         <header>
             <nav class="site-navigation">
                 <a class="logo" href="index.html"><img src="./assets/img/logo.svg"></a>
                 <div class="menu-burger">
-                    <span></span>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li>
+                        <li class="menu-item">
                             <a href="#about-us">ПРО НАС</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="#service">ПОСЛУГИ</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="#technology">ТЕХНОЛОГІЇ НАНЕСЕННЯ</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="#price">ЦІНИ</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="#our-works">НАШІ РОБОТИ</a>
                         </li>
-                        <li>
+                        <li class="menu-item">
                             <a href="#contact">КОНТАКТИ</a>
                         </li>
                     </ul>
@@ -377,7 +376,7 @@
                 <div class="container contact__container">
                     <img class="contact__image" src="./assets/img/contact-img.png">
                     <div class="contact__form">
-                        <form>
+                        <form action="./php/ajax.php" method="post">
                             <h1 class="container__title contact__title">Зворотній зв’язок</h1>
                             <input type="text" id="fname" name="fname" placeholder="Ваше ім'я">
                             <input type="tel" id="phone" name="phone" placeholder="Номер телефону">
@@ -416,6 +415,7 @@
         <footer>
             <a href="index.html">Decorative trim 2023</a>
         </footer>
+
         <script src="./assets/js/jQuery v3.6.1.js"></script>
         <script src="./assets/js/wow.js"></script>
         <script>
@@ -424,5 +424,6 @@
         <script src="./assets/js/jquery.mask.min.js"></script>
         <script src="./assets/js/slick.min.js"></script>
         <script src="./assets/js/script.js"></script>
+    
     </body>
 </html>
